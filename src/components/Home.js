@@ -21,7 +21,7 @@ function Home() {
         <b>-{">"} </b>In the Forgot Password page, Enter your email and submit.
         A reset password link will be sent to your email.
         <br></br>
-        <b>-{">"} </b>Open your email and click on the link and ir navigates to
+        <b>-{">"} </b>Open your email and click on the link and it navigates to
         another page.
         <br></br>
         <b>-{">"} </b>There type your new password and re-enter the new password
