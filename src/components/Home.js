@@ -1,5 +1,6 @@
 import React from "react";
 
+// This is the Home component where the instruction or step to use this task.
 function Home() {
   return (
     <div className="mt-5 container">
@@ -20,7 +21,14 @@ function Home() {
         <b>-{">"} </b>In the Forgot Password page, Enter your email and submit.
         A reset password link will be sent to your email.
         <br></br>
-        <b>-{">"} </b>Click on the link and enter the new password.
+        <b>-{">"} </b>Open your email and click on the link and ir navigates to
+        another page.
+        <br></br>
+        <b>-{">"} </b>There type your new password and re-enter the new password
+        to conform and submit.
+        <br></br>
+        <b>-{">"} </b>The new password is updated and now user can login with
+        email and updated password.
       </p>
     </div>
   );

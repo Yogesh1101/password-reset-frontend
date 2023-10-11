@@ -1,11 +1,10 @@
 import { Button, TextField, Typography } from "@mui/material";
 import React, { useState } from "react";
-// import { useNavigate } from "react-router-dom";
 
 function ForgotPassword() {
-  //   const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [err, setErr] = useState("");
+  // sending a random string email to reset password 
   const handleSubmit = async () => {
     await fetch(
       "https://password-reset-ay3q.onrender.com/user/forgot-password",

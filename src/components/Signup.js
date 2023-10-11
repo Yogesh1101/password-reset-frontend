@@ -2,11 +2,16 @@ import { Button, TextField, Typography } from "@mui/material";
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
+// This Signup Component
 function Signup() {
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [err, setErr] = useState("");
+
+  // Here, when the user is clicked on signup button, 
+  // it check whether the user is already exist or not.
+  // if exist the error is displayed and if not the email and password is stored in database
   const handleSignup = async () => {
     const payload = {
       email,

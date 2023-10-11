@@ -2,11 +2,14 @@ import { Button, TextField, Typography } from "@mui/material";
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
+// This Login Component
 function Login() {
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [err, setErr] = useState("");
+  // Here, once the user click on login button and the checking the user is exists or not
+  // with the use of database
   const handleLogin = async () => {
     const payload = {
       email,
