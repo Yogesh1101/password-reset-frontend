@@ -1,4 +1,7 @@
           FSD Day-41 Password Reset Task Frontend
+
+          Netlify Link : https://password-reset-task-frontend.netlify.app/
+          
                     The task is the implement a correct password reset flow with email verification and proper update of the new password in the database for the web app.
                               Login with your email and password.
                               If the user does not exist sign up with your email and password to create.
