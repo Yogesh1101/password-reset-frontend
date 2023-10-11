@@ -7,17 +7,20 @@ function ForgotPassword() {
   const [email, setEmail] = useState("");
   const [err, setErr] = useState("");
   const handleSubmit = async () => {
-    await fetch("https://password-reset-ay3q.onrender.com/user/forgot-password", {
-      method: "POST",
-      body: JSON.stringify({ email }),
-      headers: {
-        "Content-Type": "application/json",
-      },
-    })
+    await fetch(
+      "https://password-reset-ay3q.onrender.com/user/forgot-password",
+      {
+        method: "POST",
+        body: JSON.stringify({ email }),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
+    )
       .then((res) => res.json())
       .then((data) => {
         if (data.token) {
-          setErr("");
+          setErr("Reset Password Link is sent to this mail.");
         } else {
           setErr(data.error);
         }
